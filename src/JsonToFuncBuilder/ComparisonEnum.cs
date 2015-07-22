@@ -1,4 +1,4 @@
-﻿namespace JsonToFuncBuilderTests
+﻿namespace JsonToFuncBuilder
 {
     public enum ComparisonEnum
     {

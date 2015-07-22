@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace JsonToFuncBuilderTests
+namespace JsonToFuncBuilder
 {
     public class ParameterRebinder : ExpressionVisitor
     {
