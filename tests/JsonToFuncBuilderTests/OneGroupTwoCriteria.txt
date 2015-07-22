@@ -1,0 +1,12 @@
+﻿[{
+	"Criteria": [{
+		"Field": "Name",
+		"Operator": "NotEqual",
+		"Value": "Skippy"
+	},
+	{
+		"Field": "Age",
+		"Operator": "GreaterThanEqualTo",
+		"Value": 50
+	}]
+}]

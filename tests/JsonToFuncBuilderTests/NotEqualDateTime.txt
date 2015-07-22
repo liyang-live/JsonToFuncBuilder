@@ -1,0 +1,7 @@
+﻿[{
+	"Criteria": [{
+		"Field": "BirthDay",
+		"Operator": "NotEqual",
+		"Value": "10/10/2015"
+	}]
+}]

@@ -1,0 +1,7 @@
+﻿[{
+	"Criteria": [{
+		"Field": "Age",
+		"Operator": "NotEqual",
+		"Value": "10"
+	}]
+}]

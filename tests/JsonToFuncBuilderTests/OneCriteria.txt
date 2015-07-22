@@ -1,0 +1,7 @@
+﻿[{
+	"Criteria": [{
+		"Field": "Name",
+		"Operator": "Equal",
+		"Value": "Skippy"
+	}]
+}]
