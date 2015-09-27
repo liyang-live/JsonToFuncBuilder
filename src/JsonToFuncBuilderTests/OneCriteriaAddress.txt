@@ -1,0 +1,7 @@
+﻿[{
+	"Criteria": [{
+		"Field": "Address.Street",
+		"Operator": "Equal",
+		"Value": "123 Test St"
+	}]
+}]

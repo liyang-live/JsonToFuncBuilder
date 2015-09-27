@@ -130,6 +130,9 @@
   <data name="OneCriteria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>onecriteria.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="OneCriteriaAddress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>onecriteriaaddress.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
   <data name="OneGroupTwoCriteria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>onegrouptwocriteria.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>

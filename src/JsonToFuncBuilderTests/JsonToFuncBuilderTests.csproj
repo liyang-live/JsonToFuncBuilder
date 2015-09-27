@@ -87,6 +87,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="OneCriteriaAddress.txt" />
     <Content Include="NotEqualDateTime.txt" />
     <Content Include="NotEqualInteger.txt" />
     <Content Include="NotEqualString.txt" />

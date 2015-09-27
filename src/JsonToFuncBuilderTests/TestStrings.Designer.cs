@@ -123,6 +123,21 @@ namespace JsonToFuncBuilderTests {
         /// <summary>
         ///   Looks up a localized string similar to [{
         ///	&quot;Criteria&quot;: [{
+        ///		&quot;Field&quot;: &quot;Address.Street&quot;,
+        ///		&quot;Operator&quot;: &quot;Equal&quot;,
+        ///		&quot;Value&quot;: &quot;123 Test St&quot;
+        ///	}]
+        ///}].
+        /// </summary>
+        internal static string OneCriteriaAddress {
+            get {
+                return ResourceManager.GetString("OneCriteriaAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [{
+        ///	&quot;Criteria&quot;: [{
         ///		&quot;Field&quot;: &quot;Name&quot;,
         ///		&quot;Operator&quot;: &quot;NotEqual&quot;,
         ///		&quot;Value&quot;: &quot;Skippy&quot;

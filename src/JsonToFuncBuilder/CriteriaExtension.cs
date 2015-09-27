@@ -11,7 +11,26 @@ namespace JsonToFuncBuilder
         {
             var type = typeof(TSource);
             var pe = Expression.Parameter(type, "p");
-            var propertyReference = Expression.Property(pe, property);
+
+            MemberExpression propertyReference;
+
+            if (property.Contains("."))
+            {
+                var propSplit = property.Split(char.Parse("."));
+
+                var innerProp = type.GetProperty(propSplit[0]);
+                var childProp = innerProp.PropertyType.GetProperty(propSplit[1]);
+
+
+                var inner = Expression.Property(pe, innerProp);
+                propertyReference = Expression.Property(inner, childProp);
+            }
+            else
+            {
+                propertyReference = Expression.Property(pe, property);
+            }
+
+
             var constantReference = Expression.Constant(value);
 
 
@@ -51,7 +70,7 @@ namespace JsonToFuncBuilder
         public static Func<T, bool> BuildCriteria<T>(IList<CriteriaGroup> criteria)
         {
             Expression<Func<T, bool>> groups = null;
-            
+
 
             foreach (var criteriaGroup in criteria)
             {
@@ -60,7 +79,7 @@ namespace JsonToFuncBuilder
 
                 foreach (var criterion in criteriaGroup.Criteria)
                 {
-                                      
+
                     var op = (ComparisonEnum)Enum.Parse(typeof(ComparisonEnum), criterion.Operator, true);
 
 

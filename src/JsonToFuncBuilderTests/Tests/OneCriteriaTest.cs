@@ -30,5 +30,14 @@ namespace JsonToFuncBuilderTests.Tests
             customers.Where(criteria).Count().ShouldEqual(1);
         }
 
+        public void can_find_1_record_out_of_10_that_match_address(){
+            var criteria = CriteriaExtensions.BuildCriteria<Customer>(JsonConvert.DeserializeObject<IList<CriteriaGroup>>(TestStrings.OneCriteriaAddress));
+
+            var customers = Registry.CreateMany<Customer>(10).ToList();
+
+            customers.First().Address.Street = "123 Test St";
+
+            customers.Where(criteria).Count().ShouldEqual(1);
+        }
     }
 }
